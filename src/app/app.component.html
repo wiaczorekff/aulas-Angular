@@ -1,0 +1,11 @@
+<h1>{{mensagem}}</h1>
+<div *ngFor="let pokemon of pokemons" (click)="mostrarDetalhes(pokemon)">
+  <p>{{pokemon.name}}</p>
+  <img src={{pokemon.photo}} alt="">
+</div>
+
+<div *ngIf="selectPokemon" class="modal">
+  <p>{{selectPokemon.name}}</p>
+  <p>{{selectPokemon.description}}</p>
+  <button (click)="fecharModal()">fechar</button>
+</div>
