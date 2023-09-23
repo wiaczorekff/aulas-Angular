@@ -1,0 +1,39 @@
+baixando o angular.
+primeiro abra o CMD e verifique se o 'node' e o 'npm' estão instalados.
+---------------------------------------------------------------------------------------
+node --version
+npm --version
+----------------------------------------------------------------------------------------
+
+
+
+
+
+logo em seguida execute o comando para baixar o angular:
+-----------------------------------------------------------------------------
+npm install -g @angular/cli
+-------------------------------------------------------------------------------
+
+
+
+
+
+após isso você deverá executar o comando para a criação dos arquivos:
+nos campos y e n são de opções do sistema.
+-----------------------------------------------------------------------------------------------
+npm init @angular myProject
+y
+y
+n
+css
+------------------------------------------------------------------------------------------
+
+
+
+
+proximo passo é entrar na pasta do seu projeto e dar o start,
+ele irá gerar uma porta no browser, agora é só copiar e colar a url no navegador
+-------------------------------------------------------------------------------------------
+cd myProject
+npm start
+------------------------------------------------------------------------------------------
