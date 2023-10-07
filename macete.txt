@@ -1,0 +1,1 @@
+npx ng g c myDialog - no terminal depois de baixar a extensão do vscode para criar um componet novo.
