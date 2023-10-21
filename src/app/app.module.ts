@@ -10,6 +10,14 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MyDialogComponent } from './my-dialog/my-dialog.component'
 import { MatDialogModule } from '@angular/material/dialog';
 import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from "@angular/material/button";
+import {FormsModule} from '@angular/forms';
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from '@angular/material/input';
+import {provideAnimations} from '@angular/platform-browser/animations';
+import {MatSelectModule} from '@angular/material/select'; 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,11 +32,18 @@ import {MatIconModule} from '@angular/material/icon';
     BrowserAnimationsModule,
     MatDialogModule,
     MatIconModule,
+    MatButtonModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+
+
     
 
 
   ],
-  providers: [],
+  providers: [provideAnimations()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,23 +1,27 @@
 <p>hello world</p>
 <!--<mat-slide-toggle>Toggle me!</mat-slide-toggle>
 <mat-slide-toggle>Toggle me!</mat-slide-toggle>-->
-
+<main>
+ <div *ngFor="let tarefa of tarefas">
   <mat-expansion-panel>
-<mat-expansion-panel-header>
-<mat-panel-title>
-<h2>titulo</h2>
-</mat-panel-title>
-<mat-panel-description>
-<!--descrição--> 
-</mat-panel-description>
-</mat-expansion-panel-header>
-<mat-chip-listbox aria-label="Fish selection">
-    <mat-chip-option selected>a fazer</mat-chip-option>
-    <mat-chip-option>fazendo</mat-chip-option>
-    <mat-chip-option>concluido</mat-chip-option>
-  </mat-chip-listbox>
-</mat-expansion-panel>
+    <mat-expansion-panel-header>
+    <mat-panel-title>
+    <h2>{{ tarefa.name }}</h2>
+    </mat-panel-title>
+    
+    </mat-expansion-panel-header>
+    <h3>{{tarefa.descricao}}</h3>
+    <mat-chip-listbox aria-label="Fish selection">
+        <mat-chip-option selected>a fazer</mat-chip-option>
+        <mat-chip-option>fazendo</mat-chip-option>
+        <mat-chip-option>concluido</mat-chip-option>
+      </mat-chip-listbox>
+     
+    </mat-expansion-panel>
+
+ </div>
 
 <button (click)="openDialog()" mat-fab color="primary">
     <mat-icon>add</mat-icon>
 </button>
+</main>
