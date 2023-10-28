@@ -46,7 +46,7 @@ get situacao(): string{
 }
 
 set situacao(value: string){
-    this._situacao;
+    this._situacao = value;
 }
 
 
