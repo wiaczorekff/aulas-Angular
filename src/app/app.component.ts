@@ -19,4 +19,11 @@ minhafuncao() :void {
 condicao1 = false;
 condicao2 = true;
 nomeDigitado = ''
+//lista de objetos
+listaDeMoradores = [
+  {name:'Carlos', numero: 10},
+  {name:'Elvis', numero: 20}
+]
+//lista de string
+listadeSindicos: String[] = ['Felipe', 'Lucas']
 }

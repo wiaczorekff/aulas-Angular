@@ -19,5 +19,16 @@
 <input type="text" [(ngModel)] = "nomeDigitado" name ="nomeDigitado">
 <p>O nome digitado é : {{nomeDigitado}} </p>
 
+<div [ngSwitch]="nomeDigitado">
+    <p *ngSwitchCase=" 'Felipe' ">o nome digitado foi Felipe</p>
+    <p *ngSwitchDefault>o nome digitado não foi Felipe</p>
+</div>
 
+<ul *ngFor="let morador of listaDeMoradores">
+    <li>{{morador.name}}</li>
+</ul>
+
+<ul *ngFor="let sindico of listaDeSindicos">
+    <li>{{sindico}}</li>
+</ul>
 <router-outlet></router-outlet>
