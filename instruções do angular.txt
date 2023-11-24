@@ -37,3 +37,5 @@ ele irá gerar uma porta no browser, agora é só copiar e colar a url no navega
 cd myProject
 npm start
 ------------------------------------------------------------------------------------------
+para criar um novo projeto utilize no terminal cmd:
+npx ng new nomeDoProjeto
