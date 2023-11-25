@@ -1,0 +1,38 @@
+
+  <div class="header-container">
+    <h1>Felipão Filmes</h1>
+  </div>
+  <div id="buscador">
+    <input type="text" [(ngModel)]="categoriaEscolhida" name="categoriaEscolhida" placeholder="Digite a categoria de filmes">
+  </div>
+<div *ngIf="categoriaEscolhida">
+  <h3>Filmes da categoria "{{ categoriaEscolhida }}"</h3>
+
+  <div *ngIf="categoriaEscolhida === 'Ação'">
+    <div *ngFor="let filme of filmesAcao">
+      <h4>{{ filme.titulo }}</h4>
+      <p>{{ filme.descricao }}</p>
+      <img [src]="filme.imagem" alt="{{ filme.titulo }}">
+    </div>
+  </div>
+
+  <div *ngIf="categoriaEscolhida === 'Comédia'">
+    <div *ngFor="let filme of filmesComedia">
+      <h4>{{ filme.titulo }}</h4>
+      <p>{{ filme.descricao }}</p>
+      <img [src]="filme.imagem" alt="{{ filme.titulo }}">
+    </div>
+  </div>
+
+  <div *ngIf="categoriaEscolhida === 'Terror'">
+    <div *ngFor="let filme of filmesTerror">
+      <h4>{{ filme.titulo }}</h4>
+      <p>{{ filme.descricao }}</p>
+      <img [src]="filme.imagem" alt="{{ filme.titulo }}">
+    </div>
+  </div>
+
+  <div *ngIf="!['Ação', 'Comédia', 'Terror'].includes(categoriaEscolhida)">
+    <p>Desculpe, não há filmes disponíveis para a categoria "{{ categoriaEscolhida }}"</p>
+  </div>
+</div>
